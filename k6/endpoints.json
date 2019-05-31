@@ -1,0 +1,41 @@
+{
+	[
+		{
+			'url': 'https://gateway.api.epa.vic.gov.au/ws/rest/v1/something/somethingDetails',
+			'params': {},
+			'name': 'perf_logging_no_auth'
+		},
+		{
+			'url': 'https://gateway.api.epa.vic.gov.au/ws/rest/v1/something/healthCheck',
+			'params': {},
+			'name': 'perf_no_logging_no_auth'
+		},
+		{
+			'url': 'https://gateway.apippr.epa.vic.gov.au/ws/rest/v1/something/somethingDetails',
+			'params': {
+        'headers': {
+          'Accept': '*/*',
+          'Authorization': 'Basic YWppOjEyMw==',
+          'Cache-Control': 'no-cache',
+          'Host': 'gateway.apippr.epa.vic.gov.au',
+          'accept-encoding': 'gzip, deflate',
+          'x-api-key': 'e8647986-f891-4b25-a67a-ec2bbcbd66d6'
+        }
+      },
+			'name': 'perf_with_logging_with_auth'
+		},
+		{
+			'url': 'https://gateway.apippr.epa.vic.gov.au/ws/rest/epa/api/v1/product/102',
+			'params': {
+        headers: {
+          'Accept': '*/*',
+          'Authorization': 'Basic YWppOjEyMw==',
+          'Cache-Control': 'no-cache',
+          'x-api-key': 'a6671b63-bdd4-48e0-aa06-2e80935d7381'
+        }
+      },
+			'name': 'perf_with_logging_with_cosmos'
+		}
+	]
+}
+
